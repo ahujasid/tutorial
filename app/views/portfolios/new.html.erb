@@ -1,0 +1,19 @@
+<h1>bitch portfolio new</h1>
+
+<%= form_with(model: @p_item, local: true) do |form| %>
+  
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtitle %>
+    <%= form.text_area :subtitle %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
