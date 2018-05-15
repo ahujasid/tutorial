@@ -1,7 +1,7 @@
 class PortfoliosController < ApplicationController
 
 	def index
-		@p_items = Portfolio.all
+		@p_items = Portfolio.subtitle_no
 	end
 
 	def new
